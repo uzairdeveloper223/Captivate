@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Captivate
+Comment=Host customizable Wi-Fi captive portals
+Exec=captivate
+Icon=dev.uzair.Captivate
+Terminal=false
+Categories=Network;
+Keywords=WiFi;Hotspot;Captive;Portal;
+StartupWMClass=Captivate

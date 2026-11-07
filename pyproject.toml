@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "captivate"
+version = "0.1.0"
+description = "A Linux desktop utility for customizable Wi-Fi captive portals"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Uzair"}]
+dependencies = ["PySide6-Essentials>=6.8,<7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9", "build>=1.2", "pyinstaller>=6.14"]
+
+[project.urls]
+Homepage = "https://uzair.is-a.dev"
+Repository = "https://github.com/uzairdeveloper223/Captivate"
+Issues = "https://github.com/uzairdeveloper223/Captivate/issues"
+
+[project.scripts]
+captivate = "captivate.__main__:main"
+captivate-helper = "captivate.helper:main"
+
+[tool.setuptools.package-data]
+captivate = ["assets/*.svg", "assets/icons/*.svg", "assets/*.css"]
+
+[tool.setuptools.packages.find]
+include = ["captivate*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

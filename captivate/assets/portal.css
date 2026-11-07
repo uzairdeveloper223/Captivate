@@ -1,0 +1,26 @@
+:root { color-scheme: light; --ink: #24364b; --muted: #526276; --blue: #235daf; --line: #ccd7e3; --ground: #eaf0f7; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 16px/1.55 system-ui, sans-serif; min-height: 100vh; padding: 56px 20px; }
+main { max-width: 480px; margin: 0 auto; background: #fff; padding: 36px; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 28px #24364b12; }
+header { display: flex; align-items: center; gap: 14px; font-size: 18px; font-weight: 650; margin-bottom: 32px; overflow-wrap: anywhere; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 16px; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.message { color: var(--muted); white-space: pre-wrap; margin: 0 0 28px; overflow-wrap: anywhere; }
+form { display: grid; gap: 14px; }
+label { font-weight: 600; }
+input:not([type="checkbox"]) { width: 100%; min-height: 48px; font: inherit; padding: 10px 12px; border: 1px solid #a7b8cb; border-radius: 6px; caret-color: var(--blue); }
+input::placeholder { color: #647386; opacity: 1; }
+input[type="checkbox"] { width: 19px; height: 19px; accent-color: var(--blue); flex: none; margin-top: 3px; }
+button { min-height: 48px; padding: 12px 18px; background: var(--blue); border: 1px solid var(--blue); border-radius: 6px; color: white; font: inherit; font-weight: 650; cursor: pointer; overflow-wrap: anywhere; }
+button:hover { background: #194b90; }
+button:active { background: #153d75; }
+button:disabled { background: #697d97; cursor: default; }
+:focus-visible { outline: 3px solid #235daf; outline-offset: 3px; }
+::selection { color: #152f54; background: #ccdef6; }
+.agreement { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; }
+.terms { max-height: 240px; overflow-y: auto; scrollbar-color: #8096b0 #edf2f7; background: #f2f5f9; border: 1px solid var(--line); padding: 16px; border-radius: 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.error { background: #fff0f0; border: 1px solid #e5b5b5; color: #942e2e; padding: 12px; border-radius: 6px; }
+footer { color: var(--muted); border-top: 1px solid var(--line); padding-top: 20px; margin-top: 28px; font-size: 13px; }
+a { color: var(--blue); text-underline-offset: 3px; }
+.secondary { display: inline-block; padding: 12px 0; }
+.preview { max-width: 480px; margin: 0 auto 16px; text-align: center; color: #3d5370; font-size: 14px; }
+@media (max-width: 420px) { body { padding: 24px 14px; } main { padding: 26px 22px; } h1 { font-size: 27px; } }

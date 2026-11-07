@@ -1,0 +1,42 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Test, lint, and coverage output
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Locally compiled release artifacts
+/build/
+/dist/
+*.AppDir/
+*.AppImage
+*.deb
+*.whl
+*.partial
+
+# Local design-tool state and planning context
+/.impeccable/
+/PRODUCT.md
+
+# Local settings, logs, and editor files
+.env
+.env.*
+!.env.example
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

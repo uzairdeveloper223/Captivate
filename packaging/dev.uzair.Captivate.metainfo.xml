@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>dev.uzair.Captivate</id>
+  <name>Captivate</name>
+  <summary>Host customizable Wi-Fi captive portals</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description><p>Captivate is a Python desktop utility for Linux. Create a local Wi-Fi hotspot, publish a built-in or custom page, and optionally share a separate internet connection after visitor confirmation.</p></description>
+  <launchable type="desktop-id">dev.uzair.Captivate.desktop</launchable>
+  <url type="homepage">https://uzair.is-a.dev</url>
+  <url type="bugtracker">https://github.com/uzairdeveloper223/Captivate/issues</url>
+  <provides><binary>captivate</binary></provides>
+  <developer id="dev.uzair"><name>Uzair</name></developer>
+  <content_rating type="oars-1.1"/>
+</component>

@@ -1,0 +1,7 @@
+include LICENSE README.md DESIGN.md THIRD_PARTY_NOTICES.md CONTRIBUTING.md
+exclude PRODUCT.md
+recursive-include docs *.md
+recursive-include examples *.html *.js
+recursive-include packaging *.py *.desktop *.xml
+recursive-include scripts *.py
+recursive-include tests *.py
