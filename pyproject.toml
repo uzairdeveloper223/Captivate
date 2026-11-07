@@ -13,7 +13,7 @@ authors = [{name = "Uzair"}]
 dependencies = ["PySide6-Essentials>=6.8,<7"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.9", "build>=1.2", "pyinstaller>=6.14"]
+dev = ["pytest>=9.2.0", "ruff>=0.9", "build>=1.2", "pyinstaller>=6.14"]
 
 [project.urls]
 Homepage = "https://uzair.is-a.dev"
